@@ -1,4 +1,6 @@
-class tnyosc < Formula
+require 'formula'
+
+class Tnyosc < Formula
   desc ""
   homepage ""
   url "https://github.com/tiborgo/tnyosc/archive/master.zip"
