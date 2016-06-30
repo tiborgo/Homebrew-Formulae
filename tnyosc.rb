@@ -3,14 +3,14 @@ require 'formula'
 class Tnyosc < Formula
   desc ""
   homepage ""
-  url "https://github.com/tiborgo/tnyosc/archive/master.zip"
-  sha256 "85cc828a96735bdafcf29eb6291ca91bac846579bcef7308536e0c875d6c81d7"
+  url "https://github.com/tiborgo/tnyosc/archive/40fafb67fc57c32f4341eff248891c1c4dc5e3fc.zip"
+  sha256 "4c40a05a7d90452074c0578fcfb450f67d4eac129565c36facef0b7be58301d8"
+  version "2016.06.30.2" # <year>.<month>.<day>.<commit number that day>
 
   depends_on "cmake" => :build
 
   def install
-    # system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
-    # system "cmake", ".", *std_cmake_args
+    system "cmake", ".", *std_cmake_args
     system "make", "install"
   end
 end
