@@ -9,7 +9,5 @@ class Tinydir < Formula
 
   def install
   	include.install "tinydir.h"
-    #system "cmake", ".", *std_cmake_args
-    #system "make", "install"
   end
 end
