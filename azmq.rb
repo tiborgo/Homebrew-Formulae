@@ -8,6 +8,7 @@ class Azmq < Formula
   version "2016.2.11" # <year>.<month>.<day>
 
   depends_on "cmake" => :build
+  depends_on "zmq"
 
   def install
     system "cmake", ".", *std_cmake_args
